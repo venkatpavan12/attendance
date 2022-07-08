@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+@media (max-width: 800px) {
+  section {
+    padding: 50px 20px;
+  }
+}
+
+section:not(.hero):nth-child(even) {
+  background-color: white;
+}
+
+.g {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h3 {
+  width: 250px;
+  height: 3px;
+  background-color: #3f51b5;
+  border: 0;
+  margin-bottom: 50px;
+}
+
+section h3.title {
+  text-transform: capitalize;
+  font: bold 32px sans-serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section p {
+  max-width: 772px;
+  line-height: 2;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+/* main Styles */
+
+.main {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+.main h1 {
+  font: bold 60px sans-serif;
+  color: white;
+}
+.main h3 {
+  font: normal 20px sans-serif;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.heading {
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1.5s slidefade 1s forwards;
+  padding: 0 2rem;
+  background-color: #e4e4e750;
+}
+
+.heading h1 {
+  color: rgb(37, 99, 235);
+  text-shadow: 1px 1px 1px black;
+}
+
+@keyframes slidefade {
+  100% {
+    opacity: 1;
+    margin: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    min-height: 600px;
+  }
+
+  .main h1 {
+    font-size: 48px;
+  }
+
+  .main h3 {
+    font-size: 24px;
+  }
+
+  .main a.btn {
+    padding: 15px 40px;
+  }
+}
+
+ /*Desc section */
+
+.desc.grid {
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+  background-image: white;
+}
+
+@media (max-width: 1100px) {
+  .desc.grid,
+  .desc.grid {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .desc.grid,
+  .desc.grid {
+    flex-basis: 100%;
+  }
+}
+
+/* mission Section */
+
+.mission .grid {
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+}
+
+.mission {
+  background-color: #e4e4e7;
+}
+
+.points {
+  margin: 1rem;
+  border-radius: 0.8rem;
+  align-items: center;
+  padding: 1rem;
+  width: 35vw;
+  background-color: white;
+  box-shadow: 1px 1px 10px 3px rgb(193, 189, 189);
+}
+
+.title {
+  color: rgb(37, 99, 235);
+}
+.points p {
+  margin-bottom: 0;
+}
+
+.points h4 {
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  color: rgb(37, 99, 235);
+}
+.mission .grid h4 {
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+@media (max-width: 800px) {
+  .mission .grid {
+    flex-basis: 100%;
+    padding: 20px;
+  }
+}
+
+.ic {
+  color: rgb(37, 99, 235);
+  padding: 1rem;
+  box-shadow: 1px 1px 3px rgb(37, 99, 235);
+  border-radius: 50%;
+  background-color: #e4e4e7;
+}
